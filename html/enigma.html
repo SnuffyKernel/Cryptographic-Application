@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TriCrypt</title>
+    <link rel="stylesheet" href="../styles/topbar.css">
+    <link rel="stylesheet" href="../styles/enigma.css">
+    <link rel="stylesheet" href="../styles/animation.css">
+    <script defer src="../js/appFunctions.js"></script>
+  </head>
+
+  <body>
+    <div class="mainApp">
+      <div class="topBar">
+        <div class="titleBar">
+          <div class="title1">Tri</div>
+          <div class="title2">Crypt</div>
+        </div>
+        <div class="titleBarBtns">
+          <button id="minimizeBtn" class="topBtn minimizeBtn"></button>
+          <button id="maxResBtn" class="topBtn maximizeBtn"></button>
+          <button id="closeBtn" class="topBtn closeBtn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="vigener">
+            <textarea type="text" class="cript" id="enigmaInput" placeholder="Введите текст для шифрования"></textarea>
+            <textarea type="text" class="out" id="enigmaOutput" placeholder="Здесь будет ваше зашифрованное сообщение" readonly></textarea>
+            <textarea type="text" class="lettercript" id="enigmaLetterInput" placeholder="Введите алфавит"></textarea>
+            <input type="text" class="rot1" id="enigmaRot1Input" placeholder="Введите первый ротор">
+            <input type="text" class="rot2" id="enigmaRot2Input" placeholder="Введите второй ротор">
+            <input type="text" class="rot3" id="enigmaRot3Input" placeholder="Введите трейтий ротор">
+            <input type="text" class="reflector" id="enigmaReflectorInput" placeholder="Введите рефлектор">
+            <p id="file" class="file">Сохранить в файл</p>
+            <button id="decryptBtnFile" class="roundButtonFile"></button>
+        </div>
+      <div class="dimensions">
+        <img class="group" src="../images/group.svg" width="25" height="25">
+        <input type="password" class="password" id="passwordInput" placeholder="Пароль">
+      </div>     
+        <div class="button-group">
+            <a id="login" class="button">
+                <span id="password" class="button-text">Зашифровать</span>
+            </a>
+            <div id="errorMessage" class="error-message"></div>
+            <a id="back" class="buttonback">
+                <span onclick="backhtml()" class="button-text">Назад</span>
+            </a>
+        </div>
+    </div>
+  </body>
+</html>

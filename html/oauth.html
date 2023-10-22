@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TriCrypt</title>
+    <link rel="stylesheet" href="../styles/topbar.css">
+    <link rel="stylesheet" href="../styles/oauth.css">
+    <link rel="stylesheet" href="../styles/animation.css">
+    <script defer src="../js/appFunctions.js"></script>
+  </head>
+
+  <body>
+    <div class="mainApp">
+      <div class="topBar">
+        <div class="titleBar">
+          <div class="title1">Tri</div>
+          <div class="title2">Crypt</div>
+        </div>
+        <div class="titleBarBtns">
+          <button id="minimizeBtn" class="topBtn minimizeBtn"></button>
+          <button id="maxResBtn" class="topBtn maximizeBtn"></button>
+          <button id="closeBtn" class="topBtn closeBtn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="images">
+        <img src="../images/ico.png" width="300" height="300">
+      </div>
+      <div class="dimensions">
+        <p class="text">Введите пароль</p>
+        <img class="group" src="../images/group.svg" width="25" height="25">
+        <input type="password" class="password" id="passwordInput" placeholder="Пароль">
+      </div>     
+      <a id="login" class="button">
+        <span id="password" class="button-text">Войти</span>
+      </a>
+      <div id="errorMessage" class="error-message"></div>
+      </div>
+    </div>
+  </body>
+</html>

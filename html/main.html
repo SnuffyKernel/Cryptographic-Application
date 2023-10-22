@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TriCrypt</title>
+    <link rel="stylesheet" href="../styles/topbar.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script defer src="../js/appFunctions.js"></script>
+  </head>
+
+  <body>
+    <div class="mainApp">
+      <div class="topBar">
+        <div class="titleBar">
+          <div class="title1">Tri</div>
+          <div class="title2">Crypt</div>
+        </div>
+        <div class="titleBarBtns">
+          <button id="minimizeBtn" class="topBtn minimizeBtn"></button>
+          <button id="maxResBtn" class="topBtn maximizeBtn"></button>
+          <button id="closeBtn" class="topBtn closeBtn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="button-group">
+        <a id="viginer" class="button">
+          <span onclick="vigenerhtml()" class="button-text">Шифр Виженера</span>
+        </a>
+        <a id="playfair" class="button">
+          <span onclick="playfairhtml()" class="button-text">Шифр Плейфера</span>
+        </a>
+        <a id="enigma" class="button">
+          <span onclick="enigmahtml()" class="button-text">Энигма</span>
+        </a>
+        <a id="md5" class="button">
+          <span onclick="md5()" class="button-text">Хеш MD5</span>
+        </a>
+      </div>
+      <img class="boom1" src="../images/bomb 1.png" width="250" height="250">
+      <img class="boom2" src="../images/bomb 2.png" width="250" height="250">
+    </div>
+  </body>
+</html>

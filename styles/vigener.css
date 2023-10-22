@@ -1,0 +1,252 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background: #2B2B2B;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.651);
+    border-radius: 6px;
+}
+
+.cript {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FBFAFA;
+    text-align: left;
+    box-shadow: 0px 1px 6px #000000;
+    background: #1F1F1F;
+    border-radius: 6px;
+    border: 0.4vh solid #1F1F1F;
+    padding-left: 10px;
+    padding-right: 15px;
+    height: 200px;
+    width: 400px;
+    resize: none;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.out {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FBFAFA;
+    text-align: left;
+    box-shadow: 0px 1px 6px #000000;
+    background: #1F1F1F;
+    border-radius: 6px;
+    border: 0.4vh solid #1F1F1F;
+    padding-left: 10px;
+    padding-right: 15px;
+    height: 200px;
+    width: 400px;
+    resize: none;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 280px;
+    outline: none;
+}
+
+.lettercript {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FBFAFA;
+    text-align: left;
+    box-shadow: 0px 1px 6px #000000;
+    background: #1F1F1F;
+    border-radius: 6px;
+    border: 0.4vh solid #1F1F1F;
+    padding-left: 10px;
+    padding-right: 15px;
+    height: 80px;
+    width: 300px;
+    word-break: break-all;
+    margin-left: 460px;
+    margin-top: 20px;
+    resize: none;
+    overflow: hidden;
+}
+
+.keycript {
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #FBFAFA;
+    text-align: left;
+    box-shadow: 0px 1px 6px #000000;
+    background: #1F1F1F;
+    border-radius: 6px;
+    border: 0.4vh solid #1F1F1F;
+    padding-left: 10px;
+    padding-right: 15px;
+    height: 30px;
+    width: 300px;
+    margin-left: 460px;
+    margin-top: 20px;
+}
+
+.keycript:focus, .cript:focus, .lettercript:focus {
+    outline: none;
+    border-color: rgb(0, 255, 0);
+    transition: all 0.5s;
+}
+
+.text {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff0000;
+    margin-left: 460px;
+}
+
+.text.active, .file.active{
+    color: rgb(0, 255, 0);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+
+}
+
+.roundButtonText {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #1F1F1F;
+    border: none;
+    margin-left: -170px;
+    margin-top: 86px;
+}
+
+.roundButtonFile.active, .roundButtonText.active {
+    position: absolute;
+}
+
+.roundButtonFile.active::after, .roundButtonText.active::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+}
+
+.file {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff0000;
+    margin-left: 660px;
+}
+
+.roundButtonFile {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #1F1F1F;
+    border: none;
+    margin-left: -69px;
+    margin-top: 114px;
+}
+
+.password {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FBFAFA;
+    text-align: left;
+    box-shadow: 0px 1px 6px #000000;
+    background: #1F1F1F;
+    border-radius: 6px;
+    border: 0.4vh solid #1F1F1F;
+    padding-left: 35px;
+    padding-right: 15px;
+    height: 30px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.password:focus {
+    outline: none;
+    border-color: red;
+    transition: all 0.5s;
+}
+
+.group {
+    pointer-events: none;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 6px;
+}
+
+.dimensions {
+    margin-bottom: 20px;
+    margin-top: 120px;
+    margin-left: 500px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 500px;
+}
+
+.button {
+    text-decoration: none;
+    display: block;
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    text-shadow: 0px 1px 4px #000000;
+    box-shadow: 0px 1px 6px #000000a6;
+    margin: 0 auto;
+}
+
+.buttonback {
+    display: block;
+    height: 35px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    text-shadow: 0px 1px 4px #000000;
+    box-shadow: 0px 4px 6px #000000a6;
+    margin: 0 auto;
+}
+
+.buttonback:hover, .button:hover {
+    box-shadow: 0 0 4vh 0.5vh rgb(255, 0, 0);
+    transition: all 0.5s;
+    border-radius: 1vh;
+    background-color: #2B2B2B;
+    transform: translateY(-0.5vh);
+}
+
+.button-text {
+    display: block;
+    height: 100%;
+}
